@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'arquives/home.dart';
+import 'arquives/testingStateful.dart';
 
 void main() => runApp(const MyApp());
 
@@ -8,6 +8,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Home();
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: const Text('Jornal')),
+        body: JornalEdit(),
+      ),
+    );
   }
 }
